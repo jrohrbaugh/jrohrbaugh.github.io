@@ -61,13 +61,13 @@ function calcRoute(stepsData) {
   var milesToMetres = 1609.34;
   var distanceTraveled = stepsData.distance_traveled * milesToMetres;
 
-  document.getElementById('#totalSteps').html('Total Steps: ' + stepsData.total_steps.toString());
-  document.getElementById('#stepsToday').html('Steps Today: ' + stepsData.steps_today.toString());
-  document.getElementById('#stepsTodayExpected').html('Steps Today (estimated): ' + stepsData.steps_today_estimate.toString());
-  document.getElementById('#stepsYesterday').html('Steps Yesterday: ' + stepsData.steps_yesterday.toString());
-  document.getElementById('#distanceTraveled').html('Miles Traveled: ' + stepsData.distance_traveled.toString());
-  document.getElementById('#distanceTraveledToday').html('Miles Today: ' + stepsData.distance_traveled_today.toString());
-  document.getElementById('#distanceRemaining').html('Miles Remaining: ' + stepsData.distance_remaining.toString());
+  document.getElementById('totalSteps').html('Total Steps: ' + stepsData.total_steps.toString());
+  document.getElementById('stepsToday').html('Steps Today: ' + stepsData.steps_today.toString());
+  document.getElementById('stepsTodayExpected').html('Steps Today (estimated): ' + stepsData.steps_today_estimate.toString());
+  document.getElementById('stepsYesterday').html('Steps Yesterday: ' + stepsData.steps_yesterday.toString());
+  document.getElementById('distanceTraveled').html('Miles Traveled: ' + stepsData.distance_traveled.toString());
+  document.getElementById('distanceTraveledToday').html('Miles Today: ' + stepsData.distance_traveled_today.toString());
+  document.getElementById('distanceRemaining').html('Miles Remaining: ' + stepsData.distance_remaining.toString());
 
 
   var request = {
