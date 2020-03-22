@@ -61,6 +61,15 @@ function calcRoute(stepsData) {
   var milesToMetres = 1609.34;
   var distanceTraveled = stepsData.distance_traveled * milesToMetres;
 
+  $('#totalSteps').html('Total Steps: ' + stepsData.total_steps.toString());
+  $('#stepsToday').html('Steps Today: ' + stepsData.steps_today.toString());
+  $('#stepsTodayExpected').html('Steps Today (estimated): ' + stepsData.steps_today_estimate.toString());
+  $('#stepsYesterday').html('Steps Yesterday: ' + stepsData.steps_yesterday.toString());
+  $('#distanceTraveled').html('Miles Traveled: ' + stepsData.distance_traveled.toString());
+  $('#distanceTraveledToday').html('Miles Today: ' + stepsData.distance_traveled_today.toString());
+  $('#distanceRemaining').html('Miles Remaining: ' + stepsData.distance_remaining.toString());
+
+
   var request = {
     origin: start,
     destination: end,
