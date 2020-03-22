@@ -61,13 +61,20 @@ function calcRoute(stepsData) {
   var milesToMetres = 1609.34;
   var distanceTraveled = stepsData.distance_traveled * milesToMetres;
 
-  document.getElementById('totalSteps').html('Total Steps: ' + stepsData.total_steps.toString());
-  document.getElementById('stepsToday').html('Steps Today: ' + stepsData.steps_today.toString());
-  document.getElementById('stepsTodayExpected').html('Steps Today (estimated): ' + stepsData.steps_today_estimate.toString());
-  document.getElementById('stepsYesterday').html('Steps Yesterday: ' + stepsData.steps_yesterday.toString());
-  document.getElementById('distanceTraveled').html('Miles Traveled: ' + stepsData.distance_traveled.toString());
-  document.getElementById('distanceTraveledToday').html('Miles Today: ' + stepsData.distance_traveled_today.toString());
-  document.getElementById('distanceRemaining').html('Miles Remaining: ' + stepsData.distance_remaining.toString());
+  var totalStepsElement = document.getElementById('totalSteps');
+  totalStepsElement.innerHTML = 'Total Steps: ' + stepsData.total_steps.toString();
+  var stepsTodayElement = document.getElementById('stepsToday');
+  stepsTodayElement.innerHTML = 'Steps Today: ' + stepsData.steps_today.toString();
+  var stepsTodayExpectedElement = document.getElementById('stepsTodayExpected');
+  stepsTodayExpectedElement.innerHTML = 'Steps Today (estimated): ' + stepsData.steps_today_estimate.toString();
+  var stepsYesterdayElement = document.getElementById('stepsYesterday');
+  stepsYesterdayElement.innerHTML = 'Steps Yesterday: ' + stepsData.steps_yesterday.toString();
+  var distanceTraveledElement = document.getElementById('distanceTraveled');
+  distanceTraveledElement.innerHTML = 'Miles Traveled: ' + stepsData.distance_traveled.toString();
+  var distanceTraveledTodayElement = document.getElementById('distanceTraveledToday');
+  distanceTraveledTodayElement.innerHTML = 'Miles Today: ' + stepsData.distance_traveled_today.toString();
+  var distanceRemainingElement = document.getElementById('distanceRemaining');
+  distanceRemainingElement.innerHTML = 'Miles Remaining: ' + stepsData.distance_remaining.toString();
 
 
   var request = {
