@@ -64,11 +64,11 @@ function calcRoute(stepsData) {
   var totalStepsElement = document.getElementById('totalSteps');
   totalStepsElement.innerHTML = 'Total Steps: ' + stepsData.total_steps.toString();
   var stepsTodayElement = document.getElementById('stepsToday');
-  stepsTodayElement.innerHTML = 'Steps Today: ' + stepsData.steps_today.toString();
+  stepsTodayElement.innerHTML = 'Steps Today: ' + stepsData.today_steps.toString();
   var stepsTodayExpectedElement = document.getElementById('stepsTodayExpected');
-  stepsTodayExpectedElement.innerHTML = 'Steps Today (estimated): ' + stepsData.steps_today_estimate.toString();
+  stepsTodayExpectedElement.innerHTML = 'Steps Today (estimated): ' + stepsData.today_steps_estimate.toString();
   var stepsYesterdayElement = document.getElementById('stepsYesterday');
-  stepsYesterdayElement.innerHTML = 'Steps Yesterday: ' + stepsData.steps_yesterday.toString();
+  stepsYesterdayElement.innerHTML = 'Steps Yesterday: ' + stepsData.yesterday_steps.toString();
   var distanceTraveledElement = document.getElementById('distanceTraveled');
   distanceTraveledElement.innerHTML = 'Miles Traveled: ' + stepsData.distance_traveled.toString();
   var distanceTraveledTodayElement = document.getElementById('distanceTraveledToday');
